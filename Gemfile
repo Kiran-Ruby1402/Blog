@@ -25,13 +25,19 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootstrap', '~> 4.5'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
+
 #Flexible authentication solution for Rails with Warden
 gem 'devise', '~> 4.7', '>= 4.7.1'
 #Forms made easy!
 gem 'simple_form', '~> 5.0', '>= 5.0.2'
-
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
+#High-level wrapper for processing images for the web with ImageMagick or libvips.
+gem 'image_processing', '~> 1.11'
+#Faker, a port of Data::Faker from Perl, is used to easily generate fake data: names, addresses, phone numbers, etc.
+gem 'faker', '~> 2.11'
+#will_paginate provides a simple API for performing paginated queries with Active Record, DataMapper and Sequel, and includes helpers for rendering pagination links in Rails, Sinatra, Hanami, and Merb web apps.
+gem 'will_paginate', '~> 3.3'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
